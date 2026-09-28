@@ -16,15 +16,20 @@ Maintain clear data lineage from raw data to final reporting tables.
 The project follows a layered data-warehouse approach:
 
 text
+
 Source Data
     ↓
 Bronze Layer — Raw data ingestion
     ↓
+    
 Silver Layer — Cleaned and standardized data
     ↓
+    
 Gold Layer — Business-ready dimensional model
     ↓
+    
 Analytics / Reporting
+
 This separation keeps raw data intact while making transformations traceable and easier to test. Star-schema models commonly place fact tables at the center, connected to descriptive dimension tables.
 
 # Data Model
